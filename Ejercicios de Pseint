@@ -1,0 +1,632 @@
+Proceso principal
+	Definir a,b,c,resultado como reales;
+	
+	Escribir "Digite el valor de A: ";
+	leer a;
+	Escribir "Digite el valor de B: ";
+	leer b; 
+	Escribir "Digite el valor de C: ";
+	leer c;
+	
+	resultado <- (-b+rc(b^2 - 4*a*c))/(2*a);
+	
+	Escribir "El resultado es el siguiente: ",resultado;
+	
+FinProceso
+
+//Ejercicio 2
+
+Proceso principal
+	definir a,b como reales;
+	definir resultado como logico;
+	
+	Escribir "Digite el valor de a: ";
+	leer a;
+	Escribir "Digite el valor de b: ";
+	leer b;
+	
+	resultado <- ((3+5*8)<3 y ((-6/3*4)+2<2)) o (a>b);
+	
+	escribir "El resultado es: ",resultado;
+FinProceso
+
+//Ejercicio 3: Intercambiar el valor de 2 variables
+
+Proceso principal
+	Definir a,b,aux como enteros;
+	
+	escribir "Digite el valor de a: ";
+	leer a;
+	escribir "Digite el valor de b: ";
+	leer b;
+	
+	aux <- a;
+	a <- b;
+	b <- aux;
+	
+	Escribir "El nuevo valor de a es: ",a;
+	Escribir "El nuevo valor de a es: ",b;
+	
+FinProceso
+
+Proceso programa1
+	// Este sera mi primer programa
+	definir a,b,c,resultado como enteros;
+	a <- 10;
+	b <- 20;
+	Escribir "Digite un numero: ";
+	Leer c;
+	resultado <- a+b+c;
+	Escribir "El resultado es: ",resultado;
+FinProceso
+
+Proceso programa1
+	// Mi primer programa de N S
+	Definir a,b,resultado como enteras;
+	a <- 10;
+	Escribir "Digite un numero: ";
+	Leer b;
+	resultado <- a+b;
+	Escribir "El resultado es: ",resultado;
+FinProceso
+
+Proceso programa1
+	Definir a,b,resultado como enteros;
+	a<-10;
+	Escribir "Digite un numero: ";
+	Leer b;
+	
+	//Sumamos a y b, y el resultado lo almacenamso
+	resultado <- a+b;
+	
+	Escribir "El resultado es: ",resultado;
+FinProceso
+
+Proceso ejercicio1
+	Definir horas,minutos,seg como enteros;
+	Definir horas_seg, minutos_seg, total_seg como enteros;
+	
+	Escribir "Digite las horas: ";
+	Leer horas;
+	Escribir "Digite los minutos: ";
+	Leer minutos;
+	Escribir "Digite los segundos: ";
+	Leer seg;
+	
+	horas_seg <- horas * 3600;
+	minutos_seg <- minutos * 60;
+	
+	total_seg <- horas_seg + minutos_seg + seg;
+	
+	Escribir "Los segundos equivalentes son: ",total_seg;
+FinProceso
+Proceso sin_titulo
+	Definir radio como real;
+	Escribir "Digite el valor del radio:";
+	Leer radio;
+	area <- pi * radio^2;
+	lon <- 2 * pi * radio;
+	Escribir "El area de la circuferencia es: ",area;
+	Escribir "La longitud es: ",lon;
+FinProceso
+
+Proceso ejercicio3
+	Definir num_hombres,num_mujeres Como Entero;
+	Definir total_estudiantes Como Entero;
+	Definir porcentajeH,porcentajeM Como Real;
+	Escribir 'Digite el numero de hombres: ';
+	Leer num_hombres;
+	Escribir 'Digite el numero de mujeres: ';
+	Leer num_mujeres;
+	total_estudiantes <- num_hombres+num_mujeres;
+	porcentajeH <- num_hombres/total_estudiantes*100;
+	porcentajeM <- num_mujeres/total_estudiantes*100;
+	Escribir 'El porcentaje de Hombres es: ',porcentajeH,'%';
+	Escribir 'El Porcentaje de Mujeres es: ',porcentajeM,'%';
+FinProceso
+
+Algoritmo Inicio
+	Leer N
+	Si n>0 Entonces
+		Imprimir n,"es positivo"
+	SiNo
+		Imprimir n, "es negativo"
+	Fin Si
+FinAlgoritmo
+
+Proceso principal
+	Definir numero1 Como Entero; //La variable numero1 es entera
+	Definir numero2 Como Real;
+	Definir misterio Como Logico;
+	Definir letra Como Caracter; 
+	Definir palabra Como Cadena;
+	
+	numero1 <- 10;
+	numero2 <- 19.97;
+	misterio <- Falso;
+	letra <- 'a';
+	palabra <- "Hola";
+	
+FinProceso
+
+Proceso principal
+	Definir num como entero; 
+	
+	Escribir "Digite un valor entero: ";
+	Leer num;
+	
+	Escribir "El numero es: ",num;
+FinProceso
+
+Proceso principal
+	Definir resultado como entero; 
+	Definir num1 como entero;
+	Definir num2 como entero;
+	
+	Escribir "Digite un numero: ";
+	leer num1;
+	escribir "Digite otro numero: ";
+	leer num2;
+	
+	resultado <- num1 +num2;
+	
+	Escribir "El resultado es: ",resultado;
+FinProceso
+
+//Operadores Relacionales
+
+Proceso Principal
+	Definir resultado Como Logico;
+	Definir a como entero;
+	Definir b como entero;
+	Definir c como entero;
+	
+	a <- 10;
+	b <- 20;
+	c <- 30;
+	
+	resultado <- a+b >= c;
+	
+	Escribir "El resultado es: ",resultado;
+	
+FinProceso
+
+Proceso Principal
+	Definir a,b,c como entero;
+	Definir resultado como logico;
+	
+	a<-10;
+	b<-15;
+	c<-20;
+	
+	resultado <- NO ((a>b) y (b>c));
+	
+	Escribir resultado;
+	
+FinProceso
+
+//Funciones Matematicas
+
+Proceso Principal
+	Definir num, resultado como reales;
+	
+	Escribir "Digite un numero: ";
+	leer num;
+	
+	resultado <- azar(num);
+	
+	escribir "El resultado es: ",resultado;
+FinProceso
+
+Proceso ciclos
+	Definir i Como Entero;
+	
+	i <- 1;
+	Mientras i <= 10 Hacer
+		escribir i;
+		i <- i + 1;
+	FinMientras
+	
+FinProceso
+
+Proceso ciclos
+	Definir i Como Entero;
+	i <- 1;
+	
+	Repetir
+		escribir i;
+		i <- i + 1;
+	Hasta Que i>10;
+	
+FinProceso
+
+Proceso Ejercicio32
+	Definir N,suma,i como entero;
+	
+	Escribir "Digite la cantidad de numero a sumarse: ";
+	leer N;
+	
+	suma <- 0;
+	
+	Para i<-1 Hasta N Con Paso 1 Hacer
+		suma <- suma + i;
+	FinPara
+	
+	Escribir "La suma es: ",suma;
+FinProceso
+
+Proceso ejercicio4
+	Definir cantidadA,cantidadB,cantidadC como enteros;
+	Definir tiempoA,tiempoB,tiempoC como enteros;
+	Definir tiempo_total Como Entero;
+	Definir horas, minutos como enteros;
+	
+	Escribir "Digite la cantidad de cuestionarios A: ";
+	Leer cantidadA;
+	Escribir "Digite la cantidad de cuestionarios B: ";
+	Leer cantidadB;
+	Escribir "Digite la cantidad de cuestionarios C: ";
+	Leer cantidadC;
+	
+	tiempoA <- cantidadA * 5;
+	tiempoB <- cantidadB * 8;
+	tiempoC <- cantidadC * 6;
+	
+	tiempo_total <- tiempoA + tiempoB + tiempoC;
+	
+	horas <- trunc(tiempo_total / 60);
+	minutos <- tiempo_total mod 60;
+	
+	Escribir "Se tardara ",horas," horas y ",minutos," minutos";
+FinProceso
+
+Proceso ejercicio5
+	Definir precio,descuento,precio_final como real;
+	Escribir "Digite el precio a pagar: ";
+	Leer precio;
+	descuento <- precio*0.15;
+	precio_final <- precio - descuento;
+	Escribir "El precio a pagar es de: ",precio_final;
+FinProceso
+
+Proceso Ejercicio6
+	Definir parcial1,parcial2,parcial3,promedioP,notasParcial Como Real;
+	Definir examen_final,notaExamen Como Real;
+	Definir notaTrabajo,notaFinalTrabajo Como Real;
+	Definir notaFinal Como Real;
+	Escribir 'Digite las 3 notas de los parciales';
+	Leer parcial1,parcial2,parcial3;
+	promedioP <- (parcial1+parcial2+parcial3)/3;
+	notasParcial <- promedioP*0.55;
+	Escribir 'Digite la nota del examen final: ';
+	Leer examen_final;
+	notaExamen <- examen_final*0.3;
+	Escribir 'Digite la nota del trabajo final: ';
+	Leer notaTrabajo;
+	notaFinalTrabajo <- notaTrabajo*0.15;
+	notaFinal <- notasParcial+notaExamen+notaFinalTrabajo;
+	Escribir 'La calificacion final es: ',notaFinal;
+FinProceso
+
+Proceso ejercicio20
+	Definir num Como Entero;
+	
+	Escribir "Digite un numero: ";
+	Leer num;
+	
+	Si num mod 2 = 0 Entonces
+		Escribir "El numero ",num," es par";
+	SiNo
+		Escribir "El numero ",num," es impar";
+	FinSi
+	
+FinProceso
+
+Proceso Ejercicio21
+	Definir nota1,nota2,nota3 Como Real;
+	Definir promedio Como Real;
+	Escribir 'Digite las 3 calificaciones: ';
+	Leer nota1,nota2,nota3;
+	promedio <- (nota1+nota2+nota3)/3;
+	Si promedio>=70 Entonces
+		Escribir 'El alumno esta aprobado con: ',promedio;
+	SiNo
+		Escribir 'El alumno esta desaprobado con: ',promedio;
+	FinSi
+FinProceso
+
+Proceso Ejercicio22
+	Definir compra Como Real;
+	Definir descuento,precio_final como real;
+	Escribir 'Digite la cantidad a pagar: ';
+	Leer compra;
+	Si compra>100 Entonces
+		descuento <- compra * 0.2;
+	SiNo
+		descuento <- 0;
+	FinSi
+	precio_final <- compra - descuento;
+	Escribir "El precio a pagar es: ",precio_final;
+FinProceso
+
+Proceso Ejercicio23
+	Definir num1,num2,resultado Como Real;
+	
+	Escribir "Digite dos numeros: ";
+	Leer num1,num2;
+	
+	Si num1=num2 Entonces
+		resultado <- num1 * num2;
+	SiNo
+		Si num1>num2 Entonces
+			resultado <- num1 - num2;
+		SiNo
+			resultado <- num1 + num2;
+		FinSi
+	FinSi
+	
+	Escribir "El resultado es: ",resultado;
+FinProceso
+
+Proceso Ejercicio24
+	Definir num1,num2,num3 Como Reales;
+	Escribir 'digite tres numeros diferentes: ';
+	Leer num1,num2,num3;
+	Si num1>num2 Y num1>num3 Entonces
+		Escribir 'El mayor es: ',num1;
+	SiNo
+		Si num2>num1 Y num2>num3 Entonces
+			Escribir 'El mayor es: ',num2;
+		SiNo
+			Escribir 'El mayor es: ',num3;
+		FinSi
+	FinSi
+FinProceso
+
+Proceso Ejercicio25
+	Definir precioK,kilos,precioI Como Reales;
+	Definir descuento,precio_final Como Reales;
+	Escribir 'Cuanto cuesta el kilo de manzanas? ';
+	Leer precioK;
+	Escribir 'Cuantos kilos de manzana a comprado? ';
+	Leer kilos;
+	precioI <- precioK * kilos;
+	Si kilos>=0 Y kilos<=2 Entonces
+		descuento <- 0;
+	SiNo
+		Si kilos>=2.01 Y kilos<=5 Entonces
+			descuento <- precioI*0.1;
+		SiNo
+			Si kilos>=5.01 Y kilos<=10 Entonces
+				descuento <- precioI*0.15;
+			SiNo
+				descuento <- precioI*0.2;
+			FinSi
+		FinSi
+	FinSi
+	precio_final <- precioI - descuento;
+	Escribir "El precio a pagar es: $",precio_final	;
+FinProceso
+
+Proceso Ejercicio26
+	Definir num Como Entero;
+	
+	Escribir "Digite un numero del dia de la semana(1-7): ";
+	Leer num;
+	
+	Segun num Hacer
+		1: Escribir "Lunes";
+		2: Escribir "Martes";
+		3: Escribir "Miercoles";
+		4: Escribir "Jueves";
+		5: Escribir "Viernes";
+		6: Escribir "Sabado";
+		7: Escribir "Domingo";
+		De Otro Modo:
+			Escribir "Error, no existe dia para ese numero";
+	FinSegun
+FinProceso
+
+Proceso Ejercicio27
+	Definir decada como entero;
+	Escribir "Digite una decada";
+	Leer decada;
+	Segun decada Hacer
+		10:
+			Escribir "Bodas de Hojalata";
+		20:
+			Escribir "Bodas de Porcelana";
+		30:
+			Escribir "Bodas de Perlas";
+		40:
+			Escribir "Bodas de Rubi";
+		50:
+			Escribir "Bodas de Oro";
+		60:
+			Escribir "Bodas de Diamante";
+		De Otro Modo:
+			Escribir "Decada no existente";
+	FinSegun
+FinProceso
+
+Proceso Ejercicio28
+	Definir opcion Como Entero;
+	Escribir 'MENU';
+	Escribir '1. Elevar un numero a una potencia X';
+	Escribir '2. Sacar la raiz cuadrada de un numero';
+	Escribir '3. Salir';
+	Escribir 'Digite una opcion: ';
+	Leer opcion;
+	Segun opcion  Hacer
+		1:
+			Definir num,pot,resultado Como Reales;
+			Escribir 'Digite un numero: ';
+			Leer num;
+			Escribir 'Digite la potencia';
+			Leer pot;
+			resultado <- num^pot;
+			Escribir 'El resultado es: ',resultado;
+		2:
+			Definir num,resultado como reales;
+			Escribir "Digite un numero: ";
+			Leer num;
+			resultado <- rc(num);
+			Escribir "El resultado es: ",resultado;
+		3:
+		De Otro Modo:
+			Escribir "Se equivoco de seleccion de menu";
+	FinSegun
+FinProceso
+
+Proceso ciclos
+	Definir i Como Entero;
+	
+	Para i<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir i;
+	FinPara
+	
+FinProceso
+
+Proceso Ejercicio33
+	definir suma_pares,suma_impares,i como enteros;
+	suma_pares <- 0;
+	suma_impares <- 0;
+	Para i<-2 Hasta 49 Hacer
+		Si i mod 2 = 0 Entonces
+			suma_pares <- suma_pares+i;
+		SiNo
+			suma_impares <- suma_impares+i;
+		FinSi
+	FinPara
+	Escribir "La suma de pares es: ",suma_pares;
+	Escribir " La suma es impares es: ",suma_impares;
+FinProceso
+
+Proceso Ejercicio34
+	Definir num,i Como Entero;
+	Definir conteo_positivos,conteo_negativos,conteo_neutros Como Entero;
+	conteo_positivos <- 0;
+	conteo_negativos <- 0;
+	conteo_neutros <- 0;
+	Para i<-1 Hasta 10 Hacer
+		Escribir i,'. Digite un numero: ';
+		Leer num;
+		Si num=0 Entonces
+			conteo_neutros <- conteo_neutros+1;
+		SiNo
+			Si num>0 Entonces
+				conteo_positivos <- conteo_positivos+1;
+			SiNo
+				conteo_negativos <- conteo_negativos+1;
+			FinSi
+		FinSi
+	FinPara
+	Escribir 'La cantidad de positivos es: ',conteo_positivos;
+	Escribir 'La cantidad de negativos es: ',conteo_negativos;
+	Escribir 'La cantidad de neutros es: ',conteo_neutros;
+FinProceso
+
+Proceso Ejercicio35
+	Definir calificacion_promedio,calificacion_baja Como real;
+	Definir calificacion,suma como real;
+	definir i Como Entero;
+	
+	suma <- 0;
+	calificacion_baja <- 99999;
+	
+	Para  i<-1 Hasta 10 Con Paso 1 Hacer
+		Escribir i, ". Digite una calificacion: ";
+		Leer calificacion;
+		
+		suma <- suma + calificacion;
+		
+		Si calificacion < calificacion_baja Entonces
+			calificacion_baja <- calificacion;
+		FinSi
+	FinPara
+	
+	calificacion_promedio <- suma/10;
+	
+	Escribir "La calificacion promedio es: ",calificacion_promedio;
+	Escribir "La calificacion mas baja es: ",calificacion_baja;
+FinProceso
+
+Proceso Ejercicio36
+	Definir num Como Entero;
+	Definir i,factorial Como Entero;
+	Repetir
+		Escribir 'Digite un numero: ';
+		Leer num;
+	Hasta Que num>=0
+	i <- 1;
+	factorial <- 1;
+	Mientras i<=num Hacer
+		factorial <- factorial*1;
+		i <- i+1;
+	FinMientras
+	Escribir 'El factorial es: ',factorial;
+FinProceso
+
+Proceso Ejercicio37
+	Definir n_elementos Como Entero;
+	Definir i,suma Como Entero;
+	Escribir 'Digite la cantidad de elementos a sumarse: ';
+	Leer n_elementos;
+	i <- 1;
+	suma <- 0;
+	Mientras i<=n_elementos Hacer
+		suma <- suma + i^2;
+		i <- i + 1;
+	FinMientras
+	Escribir 'La suma es: ',suma;
+FinProceso
+
+Proceso Ejercicio38
+	Definir n_elementos,i,num Como Entero;
+	Definir suma_pares,conteo_pares Como Entero;
+	definir suma_impares,conteo_impares Como entero;
+	definir promedio Como Real;
+	
+	Escribir "Digite la cantidad de elementos a ingresar: ";
+	leer n_elementos;
+	
+	i<- 1;
+	suma_pares <- 0;
+	conteo_pares <- 0;
+	
+	suma_impares <- 0;
+	conteo_impares <- 0;
+	
+	Mientras i<= n_elementos hacer
+		Escribir i,". Digite un numero: ";
+		Leer num;
+		
+		Si num mod 2 = 0 Entonces
+			
+			suma_pares <- suma_pares + num;
+			
+			conteo_pares <- conteo_pares + 1;
+		SiNo
+			suma_impares <- suma_impares + num;
+			
+			conteo_impares <- conteo_impares + 1;
+		FinSi
+		
+		i <- i + 1;
+	FinMientras
+	
+	Si conteo_pares = 0 Entonces
+		Escribir "No se han digitado numeros pares";
+	SiNo
+		Escribir "La suma de los numeros pares es: ",suma_pares;
+		Escribir "El conteo de los numeros es pares es: ",conteo_pares;
+	FinSi
+	
+	Si conteo_impares = 0 Entonces
+		Escribir  "No se han digitado numeros impares";
+	SiNo
+		promedio <- suma_impares/conteo_impares;
+		Escribir "El promedio de impares es: ",promedio;
+	FinSi
+	
+FinProceso
