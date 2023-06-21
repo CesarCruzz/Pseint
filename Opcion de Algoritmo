@@ -1,0 +1,1142 @@
+Proceso Ejercicio
+	Definir opcion Como Entero;
+	Escribir "Menu";
+	Escribir "1) Estructuras Selectivas";
+	Escribir "2) Estructuras Condicionales";
+	Escribir "3) Estructuras aIterativas";
+	Escribir "4) Salir";
+	Escribir "Eligir opcion ";
+	leer opcion;
+	segun opcion hacer
+		1:
+			Escribir "Estructuras Selectivas";
+			definir num Como Entero;
+			Escribir "Ingrese ejercicio";
+			Escribir "Ejercicio 1";
+			Escribir "Ejercicio 2";
+			Escribir "Ejercicio 3";
+			Escribir "Ejercicio 4";
+			Escribir "Ejercicio 5";
+			Escribir "Ejercicio 6";
+			Escribir "Ejercicio 7";
+			Escribir "Ejercicio 8";
+			Escribir "Ejercicio 9";
+			Escribir "Ejercicio 10";
+			Escribir "Salir";
+			leer num;
+			segun num Hacer
+				1:
+					Escribir "(5 + 3 * 2) + 9 > 3 * 5 * 14 % 3 ";
+					
+					Escribir "(5 + 6) + 9 > 15 % 3 * 14 ";
+					
+					Escribir "11 + 9 > 0 ";
+					
+					Escribir "0 > 0 ";
+					
+					
+					
+					Escribir "2 *(4 ? 10 + 8)/2* 36 *(1/2)  ";
+					
+					Escribir "2 * 1 * 36 * 0.5 ";
+					
+					
+					
+					Escribir "260 / 12 + 54 % 3 ? 85 % ";
+					
+					Escribir "21.6666667 + 0 - 6 = 15.6666667 ";
+					
+					
+					
+					Escribir "(48 < 2 * 3) | | (2 * 7 < 12)  ";
+					
+					Escribir "(48 < 6) | (14 < 12) ";
+					
+					
+					
+					Escribir "((8 > 2) | | (932 < 23) ) & 4 == 2 ";
+					
+					Escribir "((8 > 2) | (932 < 23)) & 4 == 2 es falso. ";
+					
+				2: 
+						
+						Definir num1,num2,s,r,m,d,mo Como real; 
+						
+						Escribir "Ingrese el primer n�mero:"; 
+						
+						Leer num1; 
+						
+						Escribir "Ingrese el segundo n�mero:"; 
+						
+						Leer num2; 
+						
+						s<-num1+num2; 
+						
+						r<-num1-num2; 
+						
+						m<-num1*num2; 
+						
+						d<-num1/num2; 
+						
+						mo<-num1%num2; 
+						
+						
+						
+						Escribir "La suma es: ", s; 
+						
+						Escribir "La resta es: ", r; 
+						
+						Escribir "La multiplicaci�n es: ", m; 
+						
+						Escribir "La divisi�n es: ", d; 
+						
+						Escribir "El m�dulo es: ", mo; 
+						
+					
+					3: 
+						Definir a,b,c,delta,x1,x2 Como Entero;; 
+						
+						Escribir "Ingrese el valor de a:"; 
+						
+						Leer a; 
+						
+						Escribir "Ingrese el valor de b:"; 
+						
+						Leer b; 
+						
+						Escribir "Ingrese el valor de c:"; 
+						
+						Leer c; 
+						
+						delta <- b^2 - 4*a*c; 
+						
+						Si delta < 0 Entonces 
+							
+							Escribir "La ecuaci�n no tiene soluci�n real"; 
+							
+						SiNo 
+							
+							x1 <- -b + sqrtdelta / (2*a); 
+							
+							x2 <- -b - sqrtdelta / (2*a); 
+							
+							Si delta = 0 Entonces 
+								
+								Escribir "La ecuaci�n tiene una soluci�n doble: ", x1; 
+								
+							SiNo 
+								
+								Escribir "La ecuaci�n tiene dos soluciones: ", x1, " y ", x2; 
+								
+							FinSi 
+							
+						FinSi 
+					
+					4: 
+						Definir CatA, CatB, Hip Como Real; 
+						
+						Escribir ' ********** '; 
+						
+						Escribir ' Hipotenusa '; 
+						
+						Escribir ' ********** '; 
+						
+						Escribir ' '; 
+						
+						Escribir 'Cateto A: '; 
+						
+						Leer CatA; 
+						
+						Escribir 'Cateto B: '; 
+						
+						Leer CatB; 
+						
+						Hip <- Raiz(CatA^2 + CatB^2); 
+						
+						Escribir 'Hipotenusa: ',Hip; 
+					
+					5: 
+						Escribir "Ingrese un n�mero"; 
+						
+						Leer num; 
+						
+						Si num % 2 = 0 Entonces 
+							
+							Escribir "El n�mero es par"; 
+							
+						Sino 
+							
+							Escribir "El n�mero es impar"; 
+							
+						FinSi 
+					
+					6: 
+						definir n,x,binario Como Real; 
+						
+						Escribir "Escribe un numero"; 
+						
+						leer n; 
+						
+						Escribir "El numero ",n, "convertido a binario es "; 
+						
+						x<-1; 
+						
+						binario<-0; 
+						
+						Mientras n >= 1 Hacer 
+							
+							si n mod 2=1 Entonces 
+								
+								binario<-binario+x; 
+								
+							FinSi 
+							
+							n<-trunc(n/2); 
+							
+							x<-x*10; 
+							
+						FinMientras 
+						
+						Escribir binario; 
+					
+					7: 
+						Definir numero,unidades_de_mil como entero ;
+						
+						Escribir "Ingrese un n�mero de cuatro d�gitos:"; 
+						
+						Leer numero; 
+						
+						unidades <- numero % 10; 
+						
+						numero <- numero / 10; 
+						
+						decenas <- numero % 10; 
+						
+						numero <- numero / 10; 
+						
+						centenas <- numero % 10; 
+						
+						numero <- numero / 10; 
+						
+						unidades_de_mil <- numero % 10; 
+						
+						Escribir "Unidades: ", unidades; 
+						
+						Escribir "Decenas: ", decenas; 
+						
+						Escribir "Centenas: ", centenas; 
+						
+						Escribir "Unidades de mil: ", unidades_de_mil; 
+					
+					8: 
+						Definir letra Como Caracter; 
+						
+						Escribir "Ingresa un caracter "; 
+						
+						leer letra; 
+						
+						si letra = "a" o letra ="e" o letra = "i" o letra = "o" o letra = "u" Entonces 
+							
+							Escribir "El caracter ",letra," es un vocal "; 
+							
+						SiNo 
+							
+							si letra = "a" o letra ="e" o letra = "i" o letra = "o" o letra = "u" Entonces 
+								
+								Escribir "El caracter ",letra, "es una vocal"; 
+								
+							SiNo 
+								
+								Escribir "El caracter ",letra, "es una consonante"; 
+								
+							FinSi 
+							
+						FinSi 
+					
+					9: 
+						Si "a" > "b" Entonces 
+							
+							Escribir "El primer caracter es mayor que el segundo"; 
+							
+						FinSi 
+						
+						
+						
+						Si "a" < "b" Entonces 
+							
+							Escribir "El primer caracter es menor que el segundo"; 
+							
+						FinSi 
+						
+						
+						
+						Si "a" = "b" Entonces 
+							
+							Escribir "Los dos caracteres son iguales"; 
+							
+						FinSi 
+					
+					10: 
+						definir frase Como Caracter; 
+						
+						definir x Como Entero; 
+						
+						Escribir "ingreds un texto"; 
+						
+						leer frase; 
+						
+						Escribir "Converti a: "; 
+						
+						Escribir "1=Mayusculas"; 
+						
+						Escribir "2=Minusculas"; 
+						
+						leer x; 
+						
+						si x>0 y x<3 Entonces 
+							
+							si x=1 Entonces 
+								
+								Escribir "El texto en mayusculas es ",Mayusculas(frase),; 
+								
+							SiNo 
+								
+								Escribir "El texto en minusculas es ",Minusculas(frase),; 
+								
+							FinSi 
+							
+						SiNo 
+							
+							Escribir "Ingresa una opcion correcta"; 
+							
+						FinSi 
+				FinSegun
+			11: 
+			De Otro Modo:
+				Escribir "Salir";
+				Escribir "aqu� va espacio en blanco";
+		2:
+			Escribir "Estructuras Condicionales";
+			definir num Como Entero;
+			Escribir "Ingrese ejercicio";
+			Escribir "Ejercicio 1";
+			Escribir "Ejercicio 2";
+			Escribir "Ejercicio 3";
+			Escribir "Ejercicio 4";
+			Escribir "Ejercicio 5";
+			Escribir "Ejercicio 6";
+			Escribir "Ejercicio 7";
+			Escribir "Ejercicio 8";
+			Escribir "Ejercicio 9";
+			Escribir "Ejercicio 10";
+			Escribir "Salir";
+			leer num;
+			segun num Hacer
+				1:
+					Definir aaaa Como Entero; 
+					
+					Definir mes Como Entero; 
+					
+					Definir dia Como Entero; 
+					
+					
+					
+					Escribir "Ingrese la fecha en formato AAAA/MM/DD:"; 
+					
+					Leer aaaa; 
+					
+					Leer mes; 
+					
+					Leer dia; 
+					
+					Si (aaaa MOD 400 = 0) O ((aaaa MOD 4 = 0) Y (aaaa MOD 100 <> 0)) Entonces 
+						
+						Escribir "El a�o ", aaaa, " es bisiesto."; 
+						
+					Sino 
+						
+						Escribir "El a�o ", aaaa, " no es bisiesto."; 
+						
+					FinSi 
+					
+				2: 
+					a<-1; 
+					
+					b<-2; 
+					
+					c<-3; 
+					
+					suma<-c*1+b*10+a*100; 
+					
+					Escribir suma; 
+					
+					aux<-a; 
+					
+					a<-c; 
+					
+					c<-aux; 
+					
+					suma2<-c*1+b*10+a*100; 
+					
+					si (a=c) Entonces 
+						
+						Escribir "Los numeros son capicua"; 
+						
+					sino  
+						
+						Escribir "no son capicua"; 
+						
+					FinSi 
+					
+				3: 
+					Definir horas, minutos, segundos Como Entero; 
+					
+					
+					
+					Escribir "Ingrese las horas:"; 
+					
+					Leer horas; 
+					
+					
+					
+					Escribir "Ingrese los minutos:"; 
+					
+					Leer minutos; 
+					
+					
+					
+					segundos <- (horas * 3600) + (minutos * 60); 
+					
+					
+					
+					Escribir "El equivalente en segundos es:", segundos;
+					
+				4: 
+					Definir A,B,C como entero ;
+					
+					Escribir "Ingrese el primer n�mero"; 
+					
+					Leer A; 
+					
+					Escribir "Ingrese el segundo n�mero"; 
+					
+					Leer B; 
+					
+					Escribir "Ingrese el tercer n�mero"; 
+					
+					Leer C; 
+					
+					
+					
+					Si A=B Y B=C Entonces 
+						
+						Escribir "Los tres n�meros son iguales"; 
+						
+					Sino Si A>B Y A>C Entonces 
+							
+							Escribir "El primer n�mero es el mayor"; 
+							
+							Si B>C Entonces 
+								
+								Escribir "El segundo n�mero es el segundo mayor"; 
+								
+							Sino 
+								
+								Escribir "El tercer n�mero es el segundo mayor"; 
+								
+							FinSi 
+							
+						FinSi 
+						
+					FinSi 
+					
+					
+					
+					Si B>A Y B>C Entonces 
+						
+						Escribir "El segundo n�mero es el mayor"; 
+						
+						Si A>C Entonces 
+							
+							Escribir "El primer n�mero es el segundo mayor"; 
+							
+						Sino 
+							
+							Escribir "El tercer n�mero es el segundo mayor"; 
+							
+						FinSi 
+						
+					FinSi 
+					
+					Si C>A Y C>B Entonces 
+						
+						Escribir "El tercer n�mero es el mayor"; 
+						
+						Si A>B Entonces 
+							
+							Escribir "El primer n�mero es el segundo mayor"; 
+							
+						Sino 
+							
+							Escribir "El segundo n�mero es el segundo mayor"; 
+							
+						FinSi 
+
+FinSi 
+					
+                        5: 
+	definir precio,horas,total Como Real; 
+	
+	Escribir "Escribe el precio por hora"; 
+	
+	leer precio; 
+	
+	Escribir "Escribe las horas de estacionamiento"; 
+	
+	leer horas; 
+	
+	total<-precio*redon(horas); 
+	
+	Escribir "El total a pagar por las ",redon(horas), "horas es: $",total; 
+					
+6: 
+	definir imc,peso,kilogramos,categoria Como entero; 
+	
+	Escribir "Ingrese el imc de la persona"; 
+	
+	leer imc; 
+	
+	Escribir "Ingrese el kilogramos de la persona"; 
+	
+	leer kilogramos; 
+	
+	Escribir "Ingrese la relacion de una persona con su altura"; 
+	
+	leer peso; 
+	
+	kilogramos <- kilogramos * (0.45); 
+	
+	si peso <= 16 Entonces 
+		
+		Escribir "Criterio de ingreso"; 
+		
+	SiNo 
+		
+		si peso>=16 Entonces 
+			
+			Escribir "Infra peso"; 
+			
+		SiNo 
+			
+			si peso>=18 Entonces 
+				
+				Escribir "bajo peso"; 
+				
+			SiNo 
+				
+				si peso>=24 Entonces 
+					
+					Escribir "peso normal"; 
+					
+				SiNo 
+					
+					si peso>=29 Entonces 
+						
+						Escribir "sobrepeso"; 
+						
+					SiNo 
+						
+						si peso>=34 Entonces 
+							
+							Escribir "obesidad pre-morbida"; 
+							
+						SiNo 
+							
+							si peso>=44 Entonces 
+								
+								Escribir "obesidad morbida"; 
+								
+							SiNo 
+								
+								si peso>=46 Entonces 
+									
+									Escribir "obesidad hiper-morbida"; 
+									
+								FinSi 
+								
+							FinSi 
+							
+						FinSi 
+						
+					FinSi 
+					
+				FinSi 
+				
+			FinSi 
+			
+		FinSi 
+		
+	FinSi 
+	
+	categoria<-peso*kilogramos*imc; 
+	
+	Escribir "La categoria de la persona es ",categoria,; 
+					
+7: 
+	Definir dia, mes, dias_transcurridos Como Entero; 
+	
+    Escribir "Ingrese el d�a:"; 
+	
+    Leer dia; 
+	
+    Escribir "Ingrese el mes:"; 
+	
+    Leer mes; 
+	
+    dias_transcurridos <- (dia - 1) + (mes - 1) * 31; 
+	
+    Escribir "Han transcurrido ", dias_transcurridos, " d�as desde el 1 de enero de 2014 hasta el ", dia, " de ", mes; 
+					
+8: 
+	definir num Como Entero;; 
+	
+	escribir "Escribir numero"; 
+	
+	leer num; 
+	
+	Segun num Hacer 
+		
+		1: Escribir("Enero"); 
+			
+		2: Escribir("Febrero"); 
+			
+		3: Escribir("Marzo"); 
+			
+		4: Escribir("Abril"); 
+			
+		5: Escribir("Mayo"); 
+			
+		6: Escribir("Junio"); 
+			
+		7: Escribir("Julio"); 
+			
+		8: Escribir("Agosto"); 
+			
+		9: Escribir("Septiembre"); 
+			
+		10: Escribir("Octubre"); 
+			
+		11: Escribir("Noviembre"); 
+			
+		12: Escribir("Diciembre"); 
+			
+	FinSegun 
+					
+9: 
+	definir monto,descuento Como Real; 
+	
+	Escribir "Ingrese el monto total de la compra"; 
+	
+	Leer monto; 
+	
+	Si monto > 1000 Entonces 
+		
+		descuento<-monto * 0.2; 
+		
+		monto<-monto - descuento; 
+		
+	FinSi 
+	
+	Escribir "El monto a pagar es: ", monto; 
+					
+10: 
+	definir num1,num2 Como Entero; 
+	
+	definir operador Como Real; 
+	
+	Escribir "Ingrese el primer n�mero:"; 
+	
+	Leer num1; 
+	
+	Escribir "Ingrese el segundo n�mero:"; 
+	
+	Leer num2; 
+	
+	Escribir "Ingrese el operador (+,-,*,/,mod,div):"; 
+	
+	Leer operador; 
+	
+	Segun operador Hacer 
+		
+		: Escribir "La suma es:", num1 + num2; 
+			
+		: Escribir "La resta es:", num1 - num2; 
+			
+			Escribir "La multiplicaci�n es:", num1 * num2; 
+			
+			Si num2 <> 0 Entonces 
+				
+				Escribir "La divisi�n es:", num1 / num2 ; 
+				
+			Sino  
+				
+				Escribir "No se puede dividir por cero"; 
+				
+				
+				
+				Si num2 <> 0 Entonces  
+					
+					Escribir "El resto es:", num1 mod num2 ; 
+					
+				Sino  
+					
+					Escribir "No se puede dividir por cero"; 
+					
+					Si num2 <> 0 Entonces  
+						
+						Escribir "La divisi�n entera es:", num1 /num2 ; 
+						
+					Sino 
+						
+						Escribir "No se puede dividir por cero"; 
+						
+					FinSi 
+					
+				FinSi 
+				
+			FinSi 
+			
+	FinSegun 
+FinSegun
+11: 
+De Otro Modo:
+	Escribir "Salir";
+	Escribir "aqu� va espacio en blanco";
+			
+		3: Escribir "Estructuras Alternativas";
+			definir num Como Entero;
+			Escribir "Ingrese ejercicio";
+			Escribir "Ejercicio 1";
+			Escribir "Ejercicio 2";
+			Escribir "Ejercicio 3";
+			Escribir "Ejercicio 4";
+			Escribir "Ejercicio 5";
+			Escribir "Ejercicio 6";
+			Escribir "Ejercicio 7";
+			Escribir "Ejercicio 8";
+			Escribir "Ejercicio 9";
+			Escribir "Ejercicio 10";
+			Escribir "Ejercicio 11";
+			Escribir "Ejercicio 12";
+			Escribir "Ejercicio 13";
+			Escribir "Ejercicio 14";
+			Escribir "Ejercicio 15";
+			Escribir "Salir";
+			leer num;
+			segun num Hacer
+				1:
+					Definir num Como Entero; 
+					
+					Definir contador Como Entero; 
+					
+					Escribir "Ingrese un n�mero entero:"; 
+					
+					Leer num; 
+					
+					Mientras num > 0 Hacer 
+						
+						numero <- num / 10; 
+						
+						contador <- contador + 1; 
+						
+					FinMientras 
+					
+					Escribir "El n�mero ingresado tiene ", contador, " d�gitos."; 
+					
+				2: 
+					definir n,a,b Como Entero; 
+					
+					Escribir "Dame un numero de tres digitos"; 
+					
+					leer n; 
+					
+					a<-trunc(n/100); 
+					
+					b<-n mod 10; 
+					
+					si a=b Entonces 
+						
+						Escribir "El numero",n, " es un numero capicua"; 
+						
+					SiNo 
+						
+						Escribir "El numero",n, " no es un numero capicua"; 
+						
+						
+						
+					FinSi 
+					
+				3: 
+					Definir x Como Entero;
+					Escribir "Ingrese un n�mero entero"; 
+					
+					Leer x; 
+					
+					Escribir "Los divisores de ", x, " son:"; 
+					
+					Para i<-1 Hasta x Con Paso 1 Hacer 
+						
+						Si x mod i = 0 Entonces 
+							
+							Escribir i; 
+							
+						FinSi 
+						
+					FinPara 
+					
+				4: 
+					Definir num,suma Como Entero; 
+					
+					Escribir "Ingrese un n�mero:"; 
+					
+					Leer num; 
+					
+					suma<-0; 
+					
+					Para i <- 1 Hasta num - 1 Con Paso 1 Hacer 
+						
+						Si num % i = 0 Entonces 
+							
+							suma <- suma + i; 
+							
+						FinSi 
+						
+					FinPara 
+					
+					Escribir "La suma de los divisores de ", num, " es ", suma;
+					
+				5: 
+					Definir num,i,cant_divisores Como Entero; 
+					
+					Escribir "Ingrese un n�mero entero:"; 
+					
+					Leer num; 
+					
+					cant_divisores <- 0; 
+					
+					Para i <- 1 Hasta num Con Paso 1 Hacer 
+						
+						Si num % i = 0 Entonces 
+							
+							cant_divisores <- cant_divisores + 1; 
+							
+						FinSi 
+						
+					FinPara 
+					
+					Escribir "La cantidad de divisores de ", num, " es: ", cant_divisores; 
+					
+				6: 
+					Definir n,suma,divisor Como Entero; 
+					
+					Escribir Sin Saltar "Ingrese un n�mero:"; 
+					
+					Leer n; 
+					
+					suma <- 1; 
+					
+					Escribir Sin Saltar "1"; 
+					
+					Para divisor<-2 Hasta n - 1 Con Paso 1 Hacer 
+						
+						Si n MOD divisor = 0 Entonces 
+							
+							Escribir Sin Saltar " + ", divisor; 
+							
+							suma <- suma + divisor; 
+							
+						FinSi 
+						
+					FinPara 
+					
+					Escribir " = ", suma; 
+					
+					Si suma = n Entonces 
+						
+						Escribir "El n�mero ", n, " s� es perfecto."; 
+						
+					Sino 
+						
+						Escribir "El n�mero ", n, " no es perfecto."; 
+						
+					FinSi 
+					
+				7: 
+					definir x,n,contador Como Entero; 
+					
+					escribir "Escribe un numero "; 
+					
+					leer n; 
+					
+					x<-1; 
+					
+					contador<-0; 
+					
+					mientras x<=n Hacer 
+						
+						si n mod x=0 Entonces 
+							
+							contador<-contador+1; 
+							
+						FinSi 
+						
+						x<-x+1; 
+						
+					FinMientras 
+					
+					si contador==2 Entonces 
+						
+						Escribir "El numero ",n, " es primo"; 
+						
+					SiNo 
+						
+						Escribir "El numero ",n, " no es primo"; 
+						
+					FinSi 
+					
+				8: 
+					Definir N, i, factorial Como Entero; 
+					
+					Escribir "Ingrese un n�mero entero:"; 
+					
+					Leer N; 
+					
+					factorial <- 1; 
+					
+					Para i <- 1 Hasta N Con Paso 1 Hacer 
+						
+						factorial <- factorial * i; 
+						
+					FinPara 
+					
+					Escribir "El factorial de ", N, " es ", factorial; 
+					
+				9: 
+					Definir Cont Como Caracter; 
+					
+					Escribir "Ingrese su contrase�a:"; 
+					
+					Leer Cont; 
+					
+					Mientras Longitud(Cont) < 10 Hacer 
+						
+						Escribir "La contrase�a debe tener al menos 10 d�gitos."; 
+						
+						Escribir "Ingrese su contrase�a:"; 
+						
+						Leer Cont; 
+						
+					FinMientras 
+					
+					Escribir "Contrase�a v�lida."; 
+					
+				10: 
+					Definir n, num, mayor, menor Como Entero; 
+					
+					
+					
+					Escribir "Ingrese la cantidad de numeros:"; 
+					
+					Leer n; 
+					
+					
+					
+					Escribir "Ingrese los numeros:"; 
+					
+					Leer num; 
+					
+					
+					
+					mayor <- num; 
+					
+					menor <- num; 
+					
+					Para i <- 2 Hasta n con paso num Hacer 
+						
+						
+						
+						Leer num; 
+						
+						
+						
+						Si numero > mayor Entonces 
+							
+							mayor<-num; 
+							
+						FinSi 
+						
+						
+						
+						Si numero < menor Entonces 
+							
+							menor<-num; 
+							
+						FinSi 
+						
+					FinPara 
+					
+					
+					
+					Escribir "El numero mayor es ", mayor; 
+					
+					Escribir "El numero menor es ", menor; 
+					
+				11: 
+					Definir a,b Como Entero; 
+					
+					
+					
+					Escribir "Ingresa un numero"; 
+					
+					
+					
+					leer a; 
+					
+					
+					
+					b <- 0; 
+					
+					
+					
+					Mientras a >= b Hacer  
+						
+						
+						
+						Escribir "Ingresa otro numero"; 
+						
+						
+						
+						leer b; 
+						
+					FinMientras 
+					
+					
+					
+					Mientras b >= a Hacer 
+						
+						
+						
+						Escribir b; 
+						
+						
+						
+						b<-b-1; 
+						
+						
+						
+					FinMientras 
+					
+				12: 
+					Escribir "Tabla de multiplicar del 1 al 10"; 
+					
+					Para i<-1 Hasta 10 Con Paso 1 Hacer 
+						
+						Escribir "Tabla del ", i; 
+						
+						Para j<-1 Hasta 10 Con Paso 1 Hacer 
+							
+							Escribir i, " x ", j, " = ", i*j; 
+							
+						FinPara 
+						
+					FinPara 
+					
+				13: 
+					Definir a,b,x,producto Como Entero; 
+					
+					Escribir "Ingresa dos numeros"; 
+					
+					Leer a,b; 
+					
+					producto <- 0; 
+					
+					Para x <- 1 Hasta a Con Paso 1 Hacer 
+						
+						producto <- producto + b; 
+						
+					FinPara 
+					
+					Escribir "El resultado es: ", producto; 
+					
+				14: 
+					Definir suma Como Real; 
+					
+					Definir cantidad Como Entero; 
+					
+					Definir num Como Real; 
+					
+					
+					
+					suma <- 0; 
+					
+					cantidad <- 0; 
+					
+					
+					
+					Escribir "Ingrese una serie de n�meros (ingrese 0 para terminar): "; 
+					
+					
+					
+					Repetir 
+						
+						Leer num; 
+						
+						cantidad <- cantidad + 1; 
+						
+					Hasta Que num = 0 
+					
+					
+					
+					promedio <- suma / cantidad; 
+					
+					
+					
+					Escribir "El promedio es: ", promedio; 
+					
+				15: 
+					Definir dividendo, divisor, cociente Como Entero; 
+					
+					Escribir "Ingrese el dividendo: "; 
+					
+					Leer dividendo; 
+					
+					Escribir "Ingrese el divisor: "; 
+					
+					Leer divisor; 
+					
+					cociente <- 0; 
+					
+					Mientras dividendo >= divisor Hacer 
+						
+						dividendo <- dividendo - divisor; 
+						
+						cociente <- cociente + 1; 
+						
+					FinMientras 
+					
+					Escribir "El cociente es: ", cociente; 
+			FinSegun
+		16: 
+		De Otro Modo:
+			Escribir "Salir";
+			Escribir "aqu� va espacio en blanco";
+			
+		4:
+		De Otro Modo:
+			Escribir "Salir";
+			Escribir "aqu� va espacio en blanco";
+			
+			
+	FinSegun
+
+FinProceso
