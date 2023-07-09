@@ -1,0 +1,2093 @@
+Index.html 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="./css/estilos.css"> 
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>Ejercicios de Programacion</h1> 
+
+    </header> 
+
+    <main> 
+
+        <section class="container"> 
+
+            <a class="boton" href="./pages/numeros.html">Numeros</a> 
+
+            <a class="boton" href="./pages/arreglos.html">Arreglos</a> 
+
+            <a class="boton" href="./pages/cadenas.html">Cadenas</a> 
+
+            <a class="boton" href="https://youtu.be/aNEOu7de_FQ">Video Explicativo</a> 
+
+        </section> 
+
+       
+
+       
+
+    </main> 
+
+    <footer> 
+
+        <h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+    </footer> 
+
+</body> 
+
+</html> 
+
+ 
+
+Numeros 
+
+ 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Document</title> 
+
+    <link rel="stylesheet" href="../css/estilos.css"> 
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>OPERACIONES CON NUMEROS</h1> 
+
+    </header> 
+
+    <main> 
+
+        <section class="container"> 
+
+            <a class="boton" href="./numeros/vuelto.html">Vuelto</a> 
+
+            <a class="boton" href="./numeros/Multiplo.html">Multiplo</a> 
+
+            <a class="boton" href="./numeros/divisores.html">Divisores</a> 
+
+            <a class="boton" href="./numeros/sumaDivisores.html">Suma Divisores</a> 
+
+            <a class="boton" href="./numeros/cantidadDivisores.html">Cantidad Divisores</a> 
+
+            <a class="boton" href="./numeros/perfectos.html">Perfecto</a> 
+
+            <a class="boton" href="./numeros/amigos.html">Amigos</a> 
+
+            <a class="boton" href="./numeros/primo.html">Primo</a> 
+
+            <a class="boton" href="./numeros/primosGemelos.html">Primos Gemelos</a> 
+
+            <a class="boton" href="./numeros/numerosInvertidos.html">Numero Invertido</a> 
+
+            <a class="boton" href="./numeros/cantidadDigitos.html">Cantidad Digitos</a> 
+
+            <a class="boton" href="./numeros/factorial.html">Factorial</a> 
+
+            <a class="boton" href="./numeros/exponente.html">Exponente</a> 
+
+            <a class="boton" href="./numeros/tablaMultiplicar.html">Tabla Multiplicar</a> 
+
+            <a class="boton" href="./numeros/fibonaci.html">Fibonaci</a> 
+
+  
+
+        </section> 
+
+       
+
+    </main> 
+
+    <footer> 
+
+        <h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+    </footer> 
+
+</body> 
+
+</html> 
+
+ 
+
+Numeros:  
+
+Vuelto 
+
+ 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>Vuelto Mi Comisariato</h1> 
+
+    </header> 
+
+    <main> 
+
+        <section class="container"> 
+
+          <form > 
+
+             <label for="cantidad"> 
+
+                <input type="number" id="cantidad"  placeholder="Ingrese cantidad articulos" required> 
+
+             </label> 
+
+             <label for=""> 
+
+                <input type="number" id="precio"placeholder="Ingrese Precio" required> 
+
+             </label> 
+
+             <label for=""> 
+
+                <input type="number" id="costo" placeholder="Aqui va el costo" readonly> 
+
+             </label> 
+
+             <label for=""> 
+
+                <input type="number" id="Pago" placeholder="Ingrese Pago"> 
+
+             </label> 
+
+             <div class="botones"> 
+
+                 <button type="button" class="boton" onclick="numero.vuelto()">Aceptar</button> 
+
+                 <button type="reset" class="boton" >Limpiar</button> 
+
+             </div> 
+
+             <div id="resp"> 
+
+                aqui va a ir la respuesta 
+
+             </div> 
+
+          </form> 
+
+        </section> 
+
+       
+
+       
+
+    </main> 
+
+    <footer> 
+
+        <h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+    </footer> 
+
+    <script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Múltiplo 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+</head> 
+
+<body> 
+
+    <header> 
+
+        <h1>Multiplos de dos numeros</h1> 
+
+    </header> 
+
+    <main> 
+
+        <section class="container"> 
+
+          <form > 
+
+             <label for="num"> 
+
+                <input type="number" id="num"  placeholder="Ingrese Numero" required> 
+
+             </label> 
+
+             <label for=""> 
+
+                <input type="number" id="multi"placeholder="Ingrese Multiplo" required> 
+
+             </label> 
+
+             <div class="botones"> 
+
+                 <button type="button" class="boton" onclick="numero.multiplo()">Aceptar</button> 
+
+                 <button type="reset" class="boton" >Limpiar</button> 
+
+             </div> 
+
+             <div id="resp"> 
+
+                aqui va a ir la respuesta 
+
+             </div> 
+
+          </form> 
+
+        </section> 
+
+       
+
+       
+
+    </main> 
+
+    <footer> 
+
+        <h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+    </footer> 
+
+    <script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Divisores 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+</head> 
+
+  <h1>Divisores de un número</h1> 
+
+  <script> 
+
+    function calcularDivisores() { 
+
+       
+
+      var numero = parseInt(document.getElementById("numero").value); 
+
+ 
+ 
+
+      var divisores = []; 
+
+     
+
+      for (var i = 1; i <= numero; i++) { 
+
+        if (numero % i === 0) { 
+
+          divisores.push(i); 
+
+        } 
+
+      } 
+
+       
+
+      document.getElementById("resp").innerHTML = "Divisores: " + divisores.join(", "); 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+   
+
+  <label for="numero">Número:</label> 
+
+  <input type="number" id="numero"> 
+
+   
+
+  <br> 
+
+   
+
+  <button type="button" class="boton" onclick="calcularDivisores()">Calcular divisores</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+ 
+ 
+
+  <br> 
+
+   
+
+  <p id="resp">Aqui va el resultado</p> 
+
+ 
+ 
+
+</main> 
+
+<footer> 
+
+    <h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+ 
+ 
+
+</body> 
+
+</html> 
+
+ 
+
+Suma Divisores 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <title>Suma de los divisores de un número</title> 
+
+  <script> 
+
+    function calcularSumaDivisores() { 
+
+      var numero = parseInt(document.getElementById("num").value); 
+
+      var sumaDivisores = 0; 
+
+      for (var i = 1; i <= numero; i++) { 
+
+        if (numero % i === 0) { 
+
+          sumaDivisores += i; 
+
+        } 
+
+      } 
+
+      document.getElementById("resp").innerHTML = "Suma de los divisores: " + sumaDivisores; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h1>Suma de los divisores de un número</h1> 
+
+   
+
+  <label for="numero">Número:</label> 
+
+  <input type="number" id="num"> 
+
+   
+
+  <br> 
+
+   
+
+  <button type="button" class="boton" onclick="calcularSumaDivisores()">Calcular suma de divisores</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+   
+
+  <br> 
+
+   
+
+  <p id="resp">aqui va a ir la respuesta</p> 
+
+</div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Cantidad Divisores 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Cantidad de divisores de un número</h1> 
+
+  <script> 
+
+    function calcularCantidadDivisores() { 
+
+      var inicio = parseInt(document.getElementById("inicio").value); 
+
+      var fin = parseInt(document.getElementById("fin").value); 
+
+      var cantidadDivisores = 0; 
+
+      for (var numero = inicio; numero <= fin; numero++) { 
+
+        for (var i = 1; i <= numero; i++) { 
+
+          if (numero % i === 0) { 
+
+            cantidadDivisores++; 
+
+          } 
+
+        } 
+
+      } 
+
+      document.getElementById("resp").innerHTML = "Cantidad de divisores: " + cantidadDivisores; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+   
+
+  <label for="inicio">Inicio:</label> 
+
+  <input type="number" id="inicio"> 
+
+   
+
+  <br> 
+
+   
+
+  <label for="fin">Fin:</label> 
+
+  <input type="number" id="fin"> 
+
+   
+
+  <br> 
+
+   
+
+  <button type="button" class="boton" onclick="calcularCantidadDivisores()">Calcular cantidad de divisores</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+   
+
+  <br> 
+
+   
+
+  <p id="resp">aqui va a ir la respuesta</p> 
+
+</div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Perfecto 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+</head> 
+
+  <h1>Operación con Números Perfectos</h1> 
+
+  <script type="text/javascript"> 
+
+    function verificarNumeroPerfecto() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+      var sumaDivisores = 0; 
+
+ 
+ 
+
+      for (var i = 1; i < num; i++) { 
+
+        if (num % i === 0) { 
+
+          sumaDivisores += i; 
+
+        } 
+
+      } 
+
+ 
+ 
+
+      if (sumaDivisores === num) { 
+
+        document.getElementById("resp").innerHTML = num + " no es un número perfecto."; 
+
+      } else { 
+
+        document.getElementById("resp").innerHTML = num + " es un número perfecto."; 
+
+      } 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h6>Verificar Número Perfecto</h6> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="verificarNumeroPerfecto()">Verificar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+ 
+ 
+
+</div> 
+
+ 
+ 
+
+  <p id="resp">aqui va a ir la respuesta</p> 
+
+</div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Amigos 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <title>Operación con Números Amigos</title> 
+
+  <script type="text/javascript"> 
+
+    function verificarNumerosAmigos() { 
+
+      var num1 = parseInt(document.getElementById("numero1").value); 
+
+      var num2 = parseInt(document.getElementById("numero2").value); 
+
+ 
+ 
+
+      var sumaDivisoresNum1 = calcularSumaDivisores(num1); 
+
+      var sumaDivisoresNum2 = calcularSumaDivisores(num2); 
+
+ 
+ 
+
+      if (sumaDivisoresNum1 === num2 && sumaDivisoresNum2 === num1) { 
+
+        document.getElementById("resp").innerHTML = num1 + " y " + num2 + " no son números amigos."; 
+
+      } else { 
+
+        document.getElementById("resp").innerHTML = num1 + " y " + num2 + " son números amigos."; 
+
+      } 
+
+    } 
+
+ 
+ 
+
+    function calcularSumaDivisores(num) { 
+
+      var sumaDivisores = 0; 
+
+ 
+ 
+
+      for (var i = 1; i < num; i++) { 
+
+        if (num % i === 0) { 
+
+          sumaDivisores += i; 
+
+        } 
+
+      } 
+
+ 
+ 
+
+      return sumaDivisores; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h1>Verificar Números Amigos</h1> 
+
+  <label for="numero1">Ingrese el primer número:</label> 
+
+  <input type="number" id="numero1"> 
+
+  <label for="numero2">Ingrese el segundo número:</label> 
+
+  <input type="number" id="numero2"> 
+
+  <button type="button" class="boton" onclick="verificarNumerosAmigos()">Verificar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <p id="resp">aqui va a ir la respuesta</p> 
+
+</div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Primo 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Operación con Números Primos</h1> 
+
+  <script type="text/javascript"> 
+
+    function verificarNumeroPrimo() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+ 
+ 
+
+      if (esPrimo(num)) { 
+
+        document.getElementById("resp").innerHTML = num + " es un número primo."; 
+
+      } else { 
+
+        document.getElementById("resp").innerHTML = num + " no es un número primo."; 
+
+      } 
+
+    } 
+
+ 
+ 
+
+    function esPrimo(num) { 
+
+      if (num <= 1) { 
+
+        return false; 
+
+      } 
+
+ 
+ 
+
+      for (var i = 2; i <= Math.sqrt(num); i++) { 
+
+        if (num % i === 0) { 
+
+          return false; 
+
+        } 
+
+      } 
+
+ 
+ 
+
+      return true; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Verificar Número Primo</h2> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="verificarNumeroPrimo()">Verificar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Primos Gemelos 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <title>Operación con Números Primos Gemelos</title> 
+
+  <script type="text/javascript"> 
+
+    function verificarNumerosPrimosGemelos() { 
+
+      var num1 = parseInt(document.getElementById("numero1").value); 
+
+      var num2 = parseInt(document.getElementById("numero2").value); 
+
+ 
+ 
+
+      if (esPrimo(num1) && esPrimo(num2) && Math.abs(num1 - num2) === 2) { 
+
+        document.getElementById("resp").innerHTML = num1 + " y " + num2 + " son números primos gemelos."; 
+
+      } else { 
+
+        document.getElementById("resp").innerHTML = num1 + " y " + num2 + " no son números primos gemelos."; 
+
+      } 
+
+    } 
+
+ 
+ 
+
+    function esPrimo(num) { 
+
+      if (num <= 1) { 
+
+        return false; 
+
+      } 
+
+ 
+ 
+
+      for (var i = 2; i <= Math.sqrt(num); i++) { 
+
+        if (num % i === 0) { 
+
+          return false; 
+
+        } 
+
+      } 
+
+ 
+ 
+
+      return true; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h1>Verificar Números Primos Gemelos</h1> 
+
+  <label for="numero1">Ingrese el primer número:</label> 
+
+  <input type="number" id="numero1"> 
+
+  <label for="numero2">Ingrese el segundo número:</label> 
+
+  <input type="number" id="numero2"> 
+
+  <button type="button" class="boton" onclick="verificarNumerosPrimosGemelos()">Verificar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Numeros Invertidos 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Operación con Números Invertidos</h1> 
+
+  <script type="text/javascript"> 
+
+    function invertirNumero() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+      var numInvertido = invertir(num); 
+
+ 
+ 
+
+      document.getElementById("resp").innerHTML = "El número invertido es: " + numInvertido; 
+
+    } 
+
+ 
+ 
+
+    function invertir(num) { 
+
+      var numString = num.toString(); 
+
+      var numInvertidoString = numString.split("").reverse().join(""); 
+
+      var numInvertido = parseInt(numInvertidoString); 
+
+ 
+ 
+
+      return numInvertido; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Invertir Número</h2> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="invertirNumero()">Invertir</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Cantidad Digitos 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Operación con Cantidad de Dígitos</h1> 
+
+  <script type="text/javascript"> 
+
+    function contarDigitos() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+      var cantidadDigitos = num.toString().length; 
+
+ 
+ 
+
+      document.getElementById("resp").innerHTML = "El número tiene " + cantidadDigitos + " dígitos."; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Contar Cantidad de Dígitos</h2> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="contarDigitos()">Contar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Factorial 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <title>Operación con Factorial</title> 
+
+  <script type="text/javascript"> 
+
+    function calcularFactorial() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+      var factorial = 1; 
+
+ 
+ 
+
+      for (var i = 2; i <= num; i++) { 
+
+        factorial *= i; 
+
+      } 
+
+ 
+ 
+
+      document.getElementById("resp").innerHTML = "El factorial de " + num + " es: " + factorial; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h1>Calcular Factorial</h1> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="calcularFactorial()">Calcular</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Exponente 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Operación con Exponente</h1> 
+
+  <script type="text/javascript"> 
+
+    function calcularExponente() { 
+
+      var base = parseFloat(document.getElementById("base").value); 
+
+      var exponente = parseInt(document.getElementById("exponente").value); 
+
+      var resultado = Math.pow(base, exponente); 
+
+ 
+ 
+
+      document.getElementById("resp").innerHTML = base + " elevado a la potencia " + exponente + " es: " + resultado; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Calcular Exponente</h2> 
+
+  <label for="base">Ingrese la base:</label> 
+
+  <input type="number" id="base"> 
+
+  <label for="exponente">Ingrese el exponente:</label> 
+
+  <input type="number" id="exponente"> 
+
+  <button type="button" class="boton" onclick="calcularExponente()">Calcular</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Tabla Multiplicar 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Tabla de Multiplicar</h1> 
+
+  <script type="text/javascript"> 
+
+    function generarTablaMultiplicar() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+      var tabla = "<h2>Tabla de multiplicar del " + num + "</h2>"; 
+
+      tabla += "<table>"; 
+
+      tabla += "<tr><th>Multiplicando</th><th>Producto</th></tr>"; 
+
+ 
+ 
+
+      for (var i = 1; i <= 10; i++) { 
+
+        var producto = num * i; 
+
+        tabla += "<tr><td>" + num + " x " + i + "</td><td>" + producto + "</td></tr>"; 
+
+      } 
+
+ 
+ 
+
+      tabla += "</table>"; 
+
+ 
+ 
+
+      document.getElementById("resp").innerHTML = tabla; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Generar Tabla de Multiplicar</h2> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="generarTablaMultiplicar()">Generar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+Fibonaci 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Secuencia de Fibonacci</h1> 
+
+  <script type="text/javascript"> 
+
+    function generarFibonacci() { 
+
+      var num = parseInt(document.getElementById("numero").value); 
+
+      var secuencia = "<h2>Secuencia de Fibonacci hasta " + num + "</h2>"; 
+
+      secuencia += "<p>"; 
+var a = 0; 
+
+      var b = 1; 
+
+ 
+ 
+
+      while (a <= num) { 
+
+        secuencia += a + " "; 
+
+ 
+ 
+
+        var temp = a; 
+
+        a = b; 
+
+        b = temp + b; 
+
+      } 
+
+ 
+ 
+
+      secuencia += "</p>"; 
+
+ 
+ 
+
+      document.getElementById("resp").innerHTML = secuencia; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Generar Secuencia de Fibonacci</h2> 
+
+  <label for="numero">Ingrese un número:</label> 
+
+  <input type="number" id="numero"> 
+
+  <button type="button" class="boton" onclick="generarFibonacci()">Generar</button> 
+
+  <button type="reset" class="boton" >Limpiar</button> 
+
+  <div id="resp"> 
+
+    aqui va a ir la respuesta 
+
+ </div> 
+
+</form> 
+
+</section> 
+
+ 
+ 
+ 
+
+</main> 
+
+<footer> 
+
+<h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+<script src="../../js/main.js"></script 
+
+</body> 
+
+</html> 
+
+ 
+
+Arreglos 
+
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Logica B2</title> 
+
+   <link rel="stylesheet" href="../../css/estilos.css"> 
+
+<head> 
+
+  <h1>Arreglos en HTML</h1> 
+
+  <script type="text/javascript"> 
+
+    // Definir un arreglo en JavaScript 
+
+    var numeros = ["Suma", "Resta", "Multiplicacion", "Division"]; 
+
+ 
+ 
+
+    function mostrarArreglo() { 
+
+      var arregloHTML = "<h2>Arreglo de numeros:</h2>"; 
+
+      arregloHTML += "<ul>"; 
+
+ 
+ 
+
+      // Recorrer el arreglo y generar elementos de lista en HTML 
+
+      for (var i = 0; i < numeros.length; i++) { 
+
+        arregloHTML += "<li>" + numeros[i] + "</li>"; 
+
+      } 
+
+ 
+ 
+
+      arregloHTML += "</ul>"; 
+
+ 
+ 
+
+      document.getElementById("resultado").innerHTML = arregloHTML; 
+
+    } 
+
+  </script> 
+
+</head> 
+
+<body> 
+
+  <h2>Arreglos en HTML</h2> 
+
+  <button type="button" class="boton" onclick="mostrarArreglo()">Mostrar Arreglo</button> 
+
+  <div id="resultado"></div> 
+
+ 
+ 
+
+</main> 
+
+<footer> 
+
+    <h6>Todos los derechos reservados - Daniel Soft.</h6> 
+
+</footer> 
+
+</body> 
+
+</html> 
+
+ 
+
+Cadenas 
+
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+  <title>Cadenas en HTML</title> 
+
+</head> 
+
+<body> 
+
+  <h1>Mostrar Cadenas en HTML</h1> 
+
+  <p>Este trabajo es de Cesar Cruz.</p> 
+
+  <p>De la tarea de Algoritmo.</p> 
+
+</body> 
+
+</html> 
+
+ 
+ 
+
+ 
+
+Video Explicativo 
+
+📘 Aprende CSS en MENOS de 15 MINUTOS 
+
+
+
+ 
+
+ 
+
+Main.Js 
+
+class Numeros{ 
+
+    vuelto(){ 
+
+         
+
+    } 
+
+    multiplo(){ 
+
+        let num = document.getElementById("num").value 
+
+        let mul = document.getElementById("multi").value 
+
+        let resp = document.getElementById("resp") 
+
+        //console.log(resp.textContent) 
+
+        num = parseInt(num) 
+
+        mul = parseInt(mul) 
+
+        if (num % mul == 0) { 
+
+          resp.textContent = `${mul} Es multiplo de ${num}`   
+
+        }else{ 
+
+            resp.textContent = `${mul} No es multiplo de ${num}` 
+
+        } 
+
+    } 
+
+    divisores(){ 
+
+        var botonCalcular = document.getElementById("calcular"); 
+
+botonCalcular.addEventListener("click", calcularDivisores); 
+
+function calcularDivisores() { 
+
+  var numero = parseInt(document.getElementById("numero").value); 
+
+  var divisores = []; 
+
+  for (var i = 1; i <= numero; i++) { 
+
+    if (numero % i === 0) { 
+
+      divisores.push(i); 
+
+    } 
+
+  } 
+
+  var resultado = document.getElementById("resp"); 
+
+  resultado.innerHTML = "Divisores: " + divisores.join(", "); 
+
+} 
+
+} 
+
+ 
+ 
+
+    sumaDivisores(){ 
+
+        var botonCalcular = document.getElementById("calcular"); 
+
+        botonCalcular.addEventListener("click", calcularSumaDivisores); 
+
+        function calcularSumaDivisores() { 
+
+          var numero = parseInt(document.getElementById("num").value); 
+
+          var sumaDivisores = 0; 
+
+          for (var i = 1; i <= numero; i++) { 
+
+            if (numero % i === 0) { 
+
+              sumaDivisores += i; 
+
+            } 
+
+          } 
+
+          var resultado = document.getElementById("resp"); 
+
+          resultado.innerHTML = "Suma de los divisores: " + sumaDivisores; 
+
+        } 
+
+    } 
+
+    cantidadDivisores(){ 
+
+        var botonCalcular = document.getElementById("calcular"); 
+
+        botonCalcular.addEventListener("click", calcularCantidadDivisores); 
+
+        function calcularCantidadDivisores() { 
+
+          var numero = parseInt(document.getElementById("numero").value); 
+
+          var cantidadDivisores = 0; 
+
+          for (var i = 1; i <= numero; i++) { 
+
+            if (numero % i === 0) { 
+
+              cantidadDivisores++; 
+
+            } 
+
+          } 
+
+          var resultado = document.getElementById("resp"); 
+
+          resultado.innerHTML = "Cantidad de divisores: " + cantidadDivisores; 
+
+        } 
+
+    } 
+
+} 
+
+const numero = new Numeros(); 
+
+ 
+ 
+
+ 
+
+Estilos.css 
+
+body { 
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+  background-color: #dbdde6; 
+
+  margin: 0; 
+
+  padding: 20px; 
+
+} 
+
+h1{ 
+
+      color: #f2f2f2; 
+
+      text-align:center; 
+
+      background-color: #df8686; 
+
+      border-radius: 5px; 
+
+} 
+
+h6 { 
+
+      color: #7b1818;  
+
+      text-align: center; 
+
+} 
+
+.container { 
+
+      display: flex; 
+
+      justify-content: center; 
+
+      align-items: center;  
+
+      gap: 10px; 
+
+      flex-wrap: wrap; 
+
+      max-width: 800px; 
+
+      margin: 0 auto; 
+
+      background-color: #fff; 
+
+      border-radius: 10px; 
+
+      padding: 20px; 
+
+      box-shadow: 0 10px 10px rgba(227, 22, 22, 0.5); 
+
+      font-size: 32px; 
+
+    } 
+
+.boton { 
+
+      display: inline-block; 
+
+      padding: 7px 20px; 
+
+      background-color: #f15252; 
+
+      color: #fff; 
+
+      text-decoration: none; 
+
+      border-radius: 20px; 
+
+      transition: all 0.9s ease-in-out; 
+
+       
+
+} 
+
+ .boton:hover { 
+
+      background-color: #c4269f; 
+
+      padding: 10px 20px; 
+
+}     
+
+/* estilos para los formularios */ 
+
+input { 
+
+      width: 90%; 
+
+      padding: 15px; 
+
+      font-size: 20px; 
+
+      margin-bottom: 5px; 
+
+      border-radius: 5px; 
+
+      border: 1px solid #ccc; 
+
+} 
+
+ 
+ 
+
+#resp { 
+
+      display: flex; 
+
+      justify-content: center; 
+
+      align-items: center; 
+
+      flex-wrap: wrap; 
+
+      max-width: 80%; 
+
+      margin: 0 auto; 
+
+      color:#fff; 
+
+      font-weight: 900; 
+
+      background-color: #df8686; 
+
+      border-radius: 20px; 
+
+      padding: 20px; 
+
+      box-shadow: 0 5px 10px rgba(12, 2, 2, 0.5); 
+
+    } 
+
+.botones{ 
+
+      display: flex; 
+
+      justify-content:center; 
+
+      gap: 10px; 
+
+      margin-bottom: 5px; 
+
+      
+
+}   
