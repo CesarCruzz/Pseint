@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+<head>
+  <h1>Cantidad de divisores de un número</h1>
+  <script>
+    function calcularCantidadDivisores() {
+      var inicio = parseInt(document.getElementById("inicio").value);
+      var fin = parseInt(document.getElementById("fin").value);
+      var cantidadDivisores = 0;
+      for (var numero = inicio; numero <= fin; numero++) {
+        for (var i = 1; i <= numero; i++) {
+          if (numero % i === 0) {
+            cantidadDivisores++;
+          }
+        }
+      }
+      document.getElementById("resp").innerHTML = "Cantidad de divisores: " + cantidadDivisores;
+    }
+  </script>
+</head>
+<body>
+  
+  <label for="inicio">Inicio:</label>
+  <input type="number" id="inicio">
+  
+  <br>
+  
+  <label for="fin">Fin:</label>
+  <input type="number" id="fin">
+  
+  <br>
+  
+  <button type="button" class="boton" onclick="calcularCantidadDivisores()">Calcular cantidad de divisores</button>
+  <button type="reset" class="boton" >Limpiar</button>
+  
+  <br>
+  
+  <p id="resp">aqui va a ir la respuesta</p>
+</div>
+</form>
+</section>
+
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>

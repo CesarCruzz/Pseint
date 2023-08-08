@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+<head>
+  <title>Operación con Números Primos Gemelos</title>
+  <script type="text/javascript">
+    function verificarNumerosPrimosGemelos() {
+      var num1 = parseInt(document.getElementById("numero1").value);
+      var num2 = parseInt(document.getElementById("numero2").value);
+
+      if (esPrimo(num1) && esPrimo(num2) && Math.abs(num1 - num2) === 2) {
+        document.getElementById("resp").innerHTML = num1 + " y " + num2 + " son números primos gemelos.";
+      } else {
+        document.getElementById("resp").innerHTML = num1 + " y " + num2 + " no son números primos gemelos.";
+      }
+    }
+
+    function esPrimo(num) {
+      if (num <= 1) {
+        return false;
+      }
+
+      for (var i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h1>Verificar Números Primos Gemelos</h1>
+  <label for="numero1">Ingrese el primer número:</label>
+  <input type="number" id="numero1">
+  <label for="numero2">Ingrese el segundo número:</label>
+  <input type="number" id="numero2">
+  <button type="button" class="boton" onclick="verificarNumerosPrimosGemelos()">Verificar</button>
+  <button type="reset" class="boton" >Limpiar</button>
+  <div id="resp">
+    aqui va a ir la respuesta
+ </div>
+</form>
+</section>
+
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+<html>

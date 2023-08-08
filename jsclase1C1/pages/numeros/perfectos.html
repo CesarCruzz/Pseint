@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+</head>
+  <h1>Operación con Números Perfectos</h1>
+  <script type="text/javascript">
+    function verificarNumeroPerfecto() {
+      var num = parseInt(document.getElementById("numero").value);
+      var sumaDivisores = 0;
+
+      for (var i = 1; i < num; i++) {
+        if (num % i === 0) {
+          sumaDivisores += i;
+        }
+      }
+
+      if (sumaDivisores === num) {
+        document.getElementById("resp").innerHTML = num + " no es un número perfecto.";
+      } else {
+        document.getElementById("resp").innerHTML = num + " es un número perfecto.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h6>Verificar Número Perfecto</h6>
+  <label for="numero">Ingrese un número:</label>
+  <input type="number" id="numero">
+  <button type="button" class="boton" onclick="verificarNumeroPerfecto()">Verificar</button>
+  <button type="reset" class="boton" >Limpiar</button>
+
+</div>
+
+  <p id="resp">aqui va a ir la respuesta</p>
+</div>
+</form>
+</section>
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>

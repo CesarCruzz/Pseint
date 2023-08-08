@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+<head>
+  <title>Operación con Factorial</title>
+  <script type="text/javascript">
+    function calcularFactorial() {
+      var num = parseInt(document.getElementById("numero").value);
+      var factorial = 1;
+
+      for (var i = 2; i <= num; i++) {
+        factorial *= i;
+      }
+
+      document.getElementById("resp").innerHTML = "El factorial de " + num + " es: " + factorial;
+    }
+  </script>
+</head>
+<body>
+  <h1>Calcular Factorial</h1>
+  <label for="numero">Ingrese un número:</label>
+  <input type="number" id="numero">
+  <button type="button" class="boton" onclick="calcularFactorial()">Calcular</button>
+  <button type="reset" class="boton" >Limpiar</button>
+  <div id="resp">
+    aqui va a ir la respuesta
+ </div>
+</form>
+</section>
+
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>

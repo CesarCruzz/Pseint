@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+<head>
+  <h1>Operación con Números Invertidos</h1>
+  <script type="text/javascript">
+    function invertirNumero() {
+      var num = parseInt(document.getElementById("numero").value);
+      var numInvertido = invertir(num);
+
+      document.getElementById("resp").innerHTML = "El número invertido es: " + numInvertido;
+    }
+
+    function invertir(num) {
+      var numString = num.toString();
+      var numInvertidoString = numString.split("").reverse().join("");
+      var numInvertido = parseInt(numInvertidoString);
+
+      return numInvertido;
+    }
+  </script>
+</head>
+<body>
+  <h2>Invertir Número</h2>
+  <label for="numero">Ingrese un número:</label>
+  <input type="number" id="numero">
+  <button type="button" class="boton" onclick="invertirNumero()">Invertir</button>
+  <button type="reset" class="boton" >Limpiar</button>
+  <div id="resp">
+    aqui va a ir la respuesta
+ </div>
+</form>
+</section>
+
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>

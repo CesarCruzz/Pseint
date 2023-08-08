@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+<head>
+  <h1>Tabla de Multiplicar</h1>
+  <script type="text/javascript">
+    function generarTablaMultiplicar() {
+      var num = parseInt(document.getElementById("numero").value);
+      var tabla = "<h2>Tabla de multiplicar del " + num + "</h2>";
+      tabla += "<table>";
+      tabla += "<tr><th>Multiplicando</th><th>Producto</th></tr>";
+
+      for (var i = 1; i <= 10; i++) {
+        var producto = num * i;
+        tabla += "<tr><td>" + num + " x " + i + "</td><td>" + producto + "</td></tr>";
+      }
+
+      tabla += "</table>";
+
+      document.getElementById("resp").innerHTML = tabla;
+    }
+  </script>
+</head>
+<body>
+  <h2>Generar Tabla de Multiplicar</h2>
+  <label for="numero">Ingrese un número:</label>
+  <input type="number" id="numero">
+  <button type="button" class="boton" onclick="generarTablaMultiplicar()">Generar</button>
+  <button type="reset" class="boton" >Limpiar</button>
+  <div id="resp">
+    aqui va a ir la respuesta
+ </div>
+</form>
+</section>
+
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica B2</title>
+   <link rel="stylesheet" href="../../css/estilos.css">
+<head>
+  <h1>Operación con Exponente</h1>
+  <script type="text/javascript">
+    function calcularExponente() {
+      var base = parseFloat(document.getElementById("base").value);
+      var exponente = parseInt(document.getElementById("exponente").value);
+      var resultado = Math.pow(base, exponente);
+
+      document.getElementById("resp").innerHTML = base + " elevado a la potencia " + exponente + " es: " + resultado;
+    }
+  </script>
+</head>
+<body>
+  <h2>Calcular Exponente</h2>
+  <label for="base">Ingrese la base:</label>
+  <input type="number" id="base">
+  <label for="exponente">Ingrese el exponente:</label>
+  <input type="number" id="exponente">
+  <button type="button" class="boton" onclick="calcularExponente()">Calcular</button>
+  <button type="reset" class="boton" >Limpiar</button>
+  <div id="resp">
+    aqui va a ir la respuesta
+ </div>
+</form>
+</section>
+
+
+</main>
+<footer>
+<h6>Todos los derechos reservados - Daniel Soft.</h6>
+</footer>
+<script src="../../js/main.js"></script>
+</body>
+</html>
